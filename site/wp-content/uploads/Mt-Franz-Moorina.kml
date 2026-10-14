@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Mt Franz Moorina.kml</name>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Temporary Places</name>
+		<open>1</open>
+		<Placemark>
+			<name>Structure on Mt Franz</name>
+			<description>Is this accessible to the public? </description>
+			<LookAt>
+				<longitude>152.8823918155485</longitude>
+				<latitude>-27.16187307112437</latitude>
+				<altitude>0</altitude>
+				<range>826.8818159570127</range>
+				<tilt>0</tilt>
+				<heading>0.00268977856841477</heading>
+				<altitudeMode>relativeToGround</altitudeMode>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>152.881508056995,-27.16248965723079,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Track to summit</name>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+152.8805501033741,-27.15767986427051,0 152.879992433166,-27.15842754339061,0 152.8797134574934,-27.15899399922398,0 152.8794011589072,-27.15960756225956,0 152.8795546554168,-27.16020402671437,0 152.8798038802925,-27.16066534023119,0 152.8802873391842,-27.16084845953915,0 152.8808635487148,-27.16113987194404,0 152.8811813650142,-27.16130982225188,0 152.8817856844899,-27.16168290006887,0 152.8821959817793,-27.16190241211791,0 152.8824430941905,-27.16215781925221,0 152.8823989872671,-27.16262118146505,0 152.8822466788236,-27.16296249349016,0 152.8819749444089,-27.16295196097235,0 152.8817603291642,-27.16267558019273,0 152.8815646808226,-27.16242584379226,0 </coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Possible Franz Rd trail</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+152.8808621954348,-27.15756885941338,0 152.8813867896177,-27.15816614456545,0 152.8823569545661,-27.1587517109585,0 152.8833165598596,-27.15848728572759,0 152.8845301463813,-27.15883436253176,0 152.8853889851472,-27.15916142912993,0 152.8862803341322,-27.15987559849203,0 152.8879459424558,-27.16135284678965,0 152.890653963437,-27.16374721903417,0 152.8928860819698,-27.16566106916731,0 152.895010427557,-27.16921161815103,0 152.8972447317121,-27.17097328468815,0 </coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

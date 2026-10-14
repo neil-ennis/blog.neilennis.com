@@ -1,0 +1,2 @@
+# Preserve the exact generated site bytes, including mixed line endings.
+site/** -text

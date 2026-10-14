@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<GroundOverlay>
+	
+<name>1930 map of Pine Rivers District</name>
+	<color>d9ffffff</color>
+	<Icon>
+		<href>http://blog.neilennis.com/wp-content/uploads/Old-North-Road-Southern-End.jpg</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>-27.24240678829601</north>
+		<south>-27.32635757040445</south>
+		<east>152.9912137351691</east>
+		<west>152.9227489072041</west>
+		<rotation>-13.9326885907238</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
