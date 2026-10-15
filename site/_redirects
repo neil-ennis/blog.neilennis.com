@@ -1,2 +1,3 @@
+/p/* /p/index.html 200
 /index.php/wheres-neil/ https://maps.findmespot.com/s/D12Z 301
 /index.php/* /:splat 301
