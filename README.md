@@ -6,7 +6,7 @@ This repository holds the public, static snapshot of [Neil Ennis's blog](https:/
 
 - `site/` contains the files served at the root of the website.
 - `wrangler.jsonc` configures the snapshot for Cloudflare Workers Static Assets.
-- `site/_redirects` preserves legacy WordPress URLs and rewrites `/p/<post-id>` to `site/p/index.html` for `nbe.me` shortlinks. That page uses `site/postmap.json` to find the post slug.
+- `site/_redirects` preserves legacy WordPress URLs and sends `/p/<post-id>` to `/p/?id=<post-id>` for `nbe.me` shortlinks. `site/p/index.html` then uses `site/postmap.json` to find the post slug.
 - `site/404.html` is a copy of Staatic's custom 404 page for static hosting.
 
 ## Update the snapshot
