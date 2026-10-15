@@ -21,8 +21,10 @@ The initial snapshot was checked against the current S3 object inventory on 15 O
 
 ## Hosting
 
-The Wrangler configuration is ready for a static-only Cloudflare Worker, but this repository alone does not deploy anything. Cloudflare Git integration, the custom domain, and DNS must be configured separately. Until that cutover, AWS remains the live host.
+Cloudflare serves the live site at `blog.neilennis.com` through the `blog-neilennis-com` Worker. Its Git integration builds and deploys pushes to `main` from this repository. Check the Worker deployment status and a sample of live pages after each push.
 
-Cloudflare Workers Static Assets uses `site/` as the asset directory. Run `npx wrangler dev` from the repository root for a local preview after installing Wrangler from npm. A future Git deployment should build with no command and deploy with `npx wrangler deploy`.
+Cloudflare Workers Static Assets uses `site/` as the asset directory. The build command is empty and the deploy command is `npx wrangler deploy`. Run `npx wrangler dev` from the repository root for a local preview after installing Wrangler from npm.
+
+Most GIF and MP4 files linked by the posts live on `cdn2.neilennis.com` and are therefore outside this repository. The original `DSC07816-MOTION.gif` and `PaulInCreek-MOTION.gif` animations were recovered from the private photo archive and are included in `site/wp-content/uploads/`. Keep those originals in the WordPress uploads folder when generating a fresh Staatic export.
 
 Keep an independent backup of the WordPress source and database. Git tracks this public output, not the editable WordPress site.
