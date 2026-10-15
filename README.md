@@ -14,8 +14,9 @@ This repository holds the public, static snapshot of [Neil Ennis's blog](https:/
 1. Finish and review a full Staatic publication locally.
 2. Export its public files to a separate folder and compare that export with the intended published site.
 3. Replace the generated contents of `site/` with the reviewed export. Keep `site/_redirects` and `site/404.html`; refresh the latter from `site/404_not_found/index.html` if that page changed.
-4. Leave WordPress code, databases, caches, logs, backups, credentials, and local configuration out of `site/`.
-5. Preview the snapshot locally, check a sample of posts and media, review `git status`, then commit and push.
+4. Restore any referenced legacy thumbnails that Staatic omitted. From the repository root, run `python scripts/restore_legacy_thumbnails.py "PATH_TO_WORDPRESS/wp-content/uploads"` to review the count, then run the same command with `--apply`. The script copies only referenced 2020/02 JPEG thumbnails and checks their bytes. These thumbnails are public site media, not WordPress cache or configuration files.
+5. Leave WordPress code, databases, logs, backups, credentials, and local configuration out of `site/`.
+6. Preview the snapshot locally, check a sample of posts and media, review `git status`, then commit and push.
 
 The initial snapshot was checked against the current S3 object inventory on 15 October 2026. Nine non-site files were omitted: `wp-content/uploads/wio.log`, two `Thumbs.db` files, and six `wp-content/uploads/wpforms/cache/` error pages.
 
