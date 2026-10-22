@@ -1140,17 +1140,18 @@ var WPGPXMAPS = {
 							title: function( tooltipItems, data ) {
 
 								/* Return value for title: */
-								var label_x = _formats[0].label_x;
+								var x_format = label_x;
 								var x_pos = tooltipItems[0].xLabel;
-								var x_dec = label_x.dec;
-								var x_unit = label_x.suf;
+								var x_dec = x_format.dec;
+								var x_unit = x_format.suf;
 								return Math.round( x_pos, x_dec ) + x_unit;
 							},
 							label: function( tooltipItem, data ) {
 
 								/* Format list values: */
 								var label = data.datasets[tooltipItem.datasetIndex].label || '';
-								var label_y = _formats[tooltipItem.datasetIndex].label_y;
+								var format = _formats[tooltipItem.datasetIndex];
+								var label_y = format.label_y || format;
 								var y_dec = label_y.dec;
 								var y_unit = label_y.suf;
 								var y_pos = tooltipItem.yLabel;
